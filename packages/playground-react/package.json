@@ -1,0 +1,23 @@
+{
+  "name": "playground-react",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "prebuild": "yarn workspace @headlessui/react build",
+    "dev:headlessui": "yarn workspace @headlessui/react watch",
+    "dev:next": "next dev",
+    "dev": "npm-run-all -p dev:*",
+    "build": "next build",
+    "start": "next start",
+    "clean": "rimraf ./.next"
+  },
+  "dependencies": {
+    "@headlessui/react": "*",
+    "@popperjs/core": "^2.6.0",
+    "framer-motion": "^6.0.0",
+    "next": "^12.1.4",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-flatpickr": "^3.10.9"
+  }
+}
